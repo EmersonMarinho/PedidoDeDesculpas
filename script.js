@@ -2,10 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const simBtn = document.getElementById('simBtn');
     const naoBtn = document.getElementById('naoBtn');
     const heart = document.getElementById('heart');
+    const video = document.getElementById('video');
 
-    // When "SIM" is clicked, show the heart
+    // When "SIM" is clicked, show the heart and video
     simBtn.addEventListener('click', () => {
         heart.classList.remove('hidden');
+        video.classList.remove('hidden');
+        video.play();
     });
 
     // Make the "NÃO" button impossible to click by moving it away
